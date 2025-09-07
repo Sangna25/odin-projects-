@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(213, 213, 213);
+}
+
+h1{
+font-family: 'Comic Sans MS',cursive,sans-serif;
+font-size: 48px;
+color: darkblue;
+text-align: center;
+}
+
+#container{
+    display :flex;
+    flex-wrap: wrap;
+    width:960px;
+    margin : 0 auto;
+}
+
+
+#container div{
+    border: 1px solid darkred;
+    border-radius: 2px;
+}  
+
+button{
+    padding:10px 20px;
+    font-size: large;
+    background-color: #92006b;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 60px;
+    width: 280px;
+    height:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
