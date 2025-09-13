@@ -4,4 +4,5 @@ This consists of collection of projects from The Odin Project roadmap
  1.recipes static webpage <br>
  2.Landing page 
  3.Rock Paper Scissor game
- 
+ 4.Etch-e-Sketch
+ 5.Calculator
