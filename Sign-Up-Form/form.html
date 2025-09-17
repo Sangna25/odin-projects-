@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="sidebar">
+        <img src="sign-up-bg.png" alt="backgroundImage" id="image-bg">
+        <img src="logo.png" alt="Websitelogo" id="logo">
+        </div>
+        <div class="form">
+        <form>
+            <h1>Let's Get Started!</h1>
+        <fieldset>
+            <legend>Sign-up Details</legend>
+            <div class="first-name">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="name" placeholder="John" required>
+            </div>
+             <div class="last-name">
+            <label for="last-name">Last Name</label>
+            <input id="last-name" name="name" type="text" placeholder="Doe" required>
+            </div>
+
+            <div class="email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required placeholder="abc@gmail.com" >
+            </div>
+
+            <div class="phone">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="9852082817" pattern="[0-9]{10}" minlength="10"  maxlength="10" >
+            </div>
+
+            <div class="password">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter a strong password...." minlength="6" required>
+            </div>
+            <div class="confirm-password">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password"  name="confirm-password" required minlength="6" >
+            </div>
+            
+        </fieldset>
+        <div class="submit">
+            <button type="submit" id="submit">Sign Up</button>
+             <p id="error-msg" style="color:red; margin-top:10px; margin-left: 4px; font-size: larger;"></p>
+            </div>
+        </form>
+        </div>
+    </div>
+        
+</body>
+
+</html>
