@@ -1,0 +1,27 @@
+*{
+   margin:0;
+   padding:0;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 250px;
+    width:100vw;
+    background-color: #e58a2f;
+    color:antiquewhite;
+}
+.nav-links a{
+   
+   color:antiquewhite;
+    font-size: 28px;
+    padding-top:auto;
+    text-decoration: none;
+    margin-right:15px ;
+   
+}
+.nav-links{
+    text-align : right;
+  
+}
+.nav-links li{
+    display:inline-block;;
+}
