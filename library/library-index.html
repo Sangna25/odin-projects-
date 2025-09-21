@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="library-styles.css">
+    <script src="library-script.js" defer></script>
+</head>
+<body>
+    <h1>Book Library</h1>
+    <div id="new-book">
+        <button id="new" type="button">New Book</button>
+    </div>
+    <div id="container">
+    </div>
+    <dialog id="book-dialog">
+        <form id="add-book-form">
+            <h3>Add New Book</h3>
+            <div>
+                <label for="title">Title:</label>
+                <input type="text" id="title" placeholder="Lord Of The Rings">
+            </div>
+            <div>
+                <label for="author">Author:</label>
+                <input id="#author" type="text" placeholder="J.R.R Tolkien">
+            </div>
+            <div>
+                <label for="pages">Pages:</label>
+                <input type="number" id="pages" placeholder="number of pages">
+            </div>
+            <fieldset>
+                <legend>Have u read it yet?</legend>
+                <div>
+                    <label for="read-yes">Yes</label>
+                    <input type="radio" id="read-yes" name="readStatus" value="true" checked>
+                </div>
+                <div>
+                    <label for="read-no">No</label>
+                    <input type="radio" id="read-no" name="readStatus" value="false">
+                </div>
+            </fieldset>
+            <div>
+                <button type="submit">Add Book</button>
+                <button type="button" id="close-dialog">Close</button>
+                </div>
+            </form>
+    </dialog>
+    
+</body>
+</html>
