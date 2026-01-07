@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+</head>
+<body>
+    <header>
+        <h1>Everything ToDo</h1>
+        <div id="home-bar">
+        <button id="sidebar-toggle" class="homeBar-btn"> 
+            <img class="icons" src="./assets/icons8-hamburger-button-75.png" alt="menu" width="25" >
+
+        </button>
+        <button id="theme-toggle" class="homeBar-btn">
+            <img class="icons" src="./assets/icons8-crescent-moon-75.png" alt="Theme Toggle" width="25">
+        </button>
+        </div>
+    </header>
+    <main>
+        <div id="container">
+            <nav id="sidebar-content">
+                <div class="sidebar-section">
+                    <h2>Home</h2>
+                    <div id="home-section">
+                    <button class="navBtn" id="btn-all">
+                        <img class="icons" src="assets/icons8-all-58.png" width="20">All Tasks
+                    </button>
+                    <button class="navBtn" id="btn-today">
+                        <img class="icons" src="assets/icons8-today-50.png" width="20">Today
+                    </button>
+                    <button class="navBtn" id="btn-week">
+                        <img class="icons" src="assets/icons8-week-32.png" width="20">Week
+                    </button>
+                    <button class="navBtn" id="btn-important">
+                        <img class="icons" src="assets/icons8-star-filled-30.png" width="20">Important
+                    </button>
+                    <button class="navBtn" id="btn-completed">
+                        <img class="icons" src="assets/icons8-order-completed-30.png" width="20">Completed Tasks 
+                    </button>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h2>Project</h2>
+                    <div id="project-contents">
+                    <div id="project-container">
+                    </div>
+                    <button id="add-project-Btn">
+                    <img class="icons" src="assets/icons8-add-30.png" width="20">Add Project
+                    </button>
+                    </div>
+                </div>
+                </nav>
+            <div id="task-container">
+            </div>
+        </div>
+        <dialog id="task-dialog">
+            <form method="dialog" id="task-form">
+                <h2>Add New Task</h2>
+                <div class="form-row">
+                <label for="task-title">Title: </label>
+                <input type="text" id="task-title" class="input-task" required>
+                </div>
+                <div class="form-row">
+                <label for="task-desc"  >Description: </label>
+                <textarea id="task-desc" class="input-task"></textarea>
+                </div>
+
+                <div class="form-row">
+                <label for="task-date">Date:</label>
+                <input type="date" id="task-date" class="input-task">
+                </div>
+                <div class="formBtn">
+                    <button type="button" id="cancelBtn" class="task-form-btns">Cancel</button>
+                    <button type="submit" id="submitBtn" class="task-form-btns">Submit</button>
+                </div>
+            </form>
+        </dialog>
+
+        <dialog id="project-dialog">
+            <form id="project-form">
+                <div class="form-row">
+                    <label for="projectName">Project Name: </label>
+                    <input id="projectName" type="text" required >
+                </div>
+                <div class="form-row">
+                    <button type="submit" id="ok-btn" class="project-btn-form">Ok</button>
+                    <button type="button" id="cancel-proj-btn" class="project-btn-form">Cancel</button>
+                </div>
+            </form>
+            </dialog>
+           
+    </main>
+    <footer>
+         <p>Icons by <a href="https://icons8.com" target="_blank">Icons8</a></p>
+         <p>© 2025 SP All rights reserved.</p>
+    </footer>
+</body>
+</html>
