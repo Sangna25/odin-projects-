@@ -1,0 +1,133 @@
+:root{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:inherit;
+    font-family: cursive;
+}
+#header{
+    display:flex;
+    gap:15px; 
+    background-color: azure;
+   
+    font-size: 1.2rem;
+    font-style: italic;
+    color: rgb(26, 47, 139);
+}
+#container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin:50px;
+
+   gap:20px;
+   
+
+}
+#container label{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: inherit;
+}
+
+
+#inputCity{
+  min-width: 10ch;
+  max-width: 30ch;
+  border-radius: 10px;
+  border:1px solid rgb(74, 62, 62); 
+  padding:0.5rem;
+  font-size: 0.8rem;
+  background-color: lightgray;
+  font-family: cursive;
+  font-size: 1.2rem;
+}
+#weatherBtn{
+    min-width: 100px;
+    max-width: 150px;
+    padding:0.5rem;
+    font-style: italic;
+    font-family: cursive;
+    background-color: rgb(213, 235, 255);
+    border-radius: 10px;
+    border: 1px solid rgb(74, 62, 62);
+    font-size: large;
+    font-weight: bold;
+    color: rgb(74, 62, 62);
+}
+#weatherBtn:hover{
+    background-color: rgb(113, 144, 190);
+    color:aliceblue
+}
+.tempBtn{
+    display: flex;
+    gap:10px;
+    padding:10px;
+    
+}
+.tempConverter{
+    font-family: cursive;
+    max-width: 40px;
+    padding:0.3rem;
+    font-size: 1.2rem;
+    font-style: italic;
+    background-color: rgb(189, 178, 178);
+    border:1px solid rgb(74, 62, 62);
+    border-radius: 5px;
+}
+.tempConverter:hover{
+    background-color: rgb(122, 117, 117);
+    color:aliceblue
+}
+#tempContainer{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  
+   gap:20px
+
+    
+}
+#weatherCard{
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+    grid-column: 1;
+    align-items: center;
+    grid-row:1
+    
+}
+#location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px
+}
+#weatherSticker{
+    grid-column: 2;
+}
+.mainTemp{
+    font-size:2.1rem;
+    font-style: italic;
+}
+.extraInfo{
+    font-style: italic;
+
+}
+footer{
+     width: 100%;
+    padding: 20px;
+    text-align: center;
+    bottom:auto;
+    font-family:'Inter',system-ui,sans-serif;
+    font-style: italic;
+    font-size: medium;
+    margin:20px;
+   
+
+}
+footer p a {
+    text-decoration: none;
+    color:inherit;
+}
